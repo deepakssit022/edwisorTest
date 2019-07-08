@@ -1,0 +1,7 @@
+{
+    "dbServer": {
+        "database": "testLive",
+        "host": "mongodb://localhost:27017/testLive",
+        "port": 3003
+      }
+}

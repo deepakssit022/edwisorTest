@@ -1,0 +1,15 @@
+{
+  "dbServer": {
+    "database": "test",
+    "host": "mongodb://localhost:27017/test",
+    "port": 3001
+  },
+  "auth": {
+    "secret": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9",
+    "tokenPeriod": 1440
+  },
+  "logger": {
+    "logFileDir": "../../log",
+    "logFileName": "app.log"
+  }
+}

@@ -1,0 +1,86 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Bse Project",
+        "description": "",
+        "version": "1.0"
+    },
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/test/testApp": {
+            "post": {
+                "x-swagger-router-controller": "testApp",
+                "operationId": "testApp",
+                "tags": [
+                    "Test"
+                ],
+                "description": "Api to test.",
+                "parameters": [
+                    {
+                        "name": "testName",
+                        "in": "formData",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "pic",
+                        "in": "formData",
+                        "required": false,
+                        "type": "file"
+                    }
+                ],
+                "responses": {}
+            }
+        },
+        "/test/getTestApp": {
+            "get": {
+                "x-swagger-router-controller": "getTestApp",
+                "operationId": "getTestApp",
+                "tags": [
+                    "Test"
+                ],
+                "description": "Api to test.",
+                "parameters": [
+                    {
+                        "name": "x-access-token",
+                        "type": "apiKey",
+                        "in": "header"
+                    }
+                ],
+                "responses": {}
+            }
+        },
+        "/test/edit": {
+            "put": {
+                "x-swagger-router-controller": "editTest",
+                "operationId": "editTest",
+                "tags": [
+                    "Test"
+                ],
+                "description": "Api to update test.",
+                "parameters": [
+                    {
+                        "name": "x-access-token",
+                        "type": "apiKey",
+                        "in": "header"
+                    },
+                    {
+                        "name": "testName",
+                        "in": "formData",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "pic",
+                        "in": "formData",
+                        "required": false,
+                        "type": "file"
+                    }
+                ],
+                "responses": {}
+            }
+        }
+    }
+}
